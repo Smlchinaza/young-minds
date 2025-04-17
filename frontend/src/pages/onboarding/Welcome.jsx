@@ -1,61 +1,58 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import { ArrowRight, Brain, Heart, Shield, Users } from 'lucide-react';
+import { ArrowRight, Brain, Users, Shield, LineChart } from 'lucide-react';
 
 const features = [
   {
     icon: Brain,
-    title: 'Emotional Intelligence',
-    description: 'Learn to understand and manage your trading emotions effectively',
-  },
-  {
-    icon: Heart,
-    title: 'Mental Wellbeing',
-    description: 'Maintain psychological balance during market volatility',
+    title: 'AI-Powered Assessment',
+    description: 'Get personalized insights about your emotional responses to market conditions',
   },
   {
     icon: Users,
-    title: 'Community Support',
-    description: 'Connect with traders who understand your challenges',
+    title: 'Specialized Therapists',
+    description: 'Connect with professionals who understand the unique challenges of trading',
+  },
+  {
+    icon: LineChart,
+    title: 'Continuous Support',
+    description: 'Ongoing guidance through market volatility and career transitions',
   },
   {
     icon: Shield,
-    title: 'Safe Space',
-    description: 'Share experiences and learn in a judgment-free environment',
+    title: 'Absolute Privacy',
+    description: 'Bank-level security and confidentiality for all your data and sessions',
   },
 ];
 
 const Welcome = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
-      {/* <Navbar /> */}
-      
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Trade with clarity,
+              MindSync: Mental Clarity
               <br />
-              not emotion
+              for Financial Excellence
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Young Minds is your companion in developing a resilient trading psychology.
-              We help you master your emotions and make better trading decisions.
+              In the fast-paced world of financial markets, your mental wellbeing is your greatest asset.
+              We provide specialized mental health support tailored for investors and traders like you.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 to="/auth"
                 className="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
               >
-                Get Started
+                Schedule AI Assessment
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 to="/auth?mode=login"
                 className="inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
               >
-                Log in
+                Browse Our Therapists
               </Link>
             </div>
           </div>
@@ -67,11 +64,11 @@ const Welcome = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Your Journey to Trading Mastery
+              How MindSync Works For You
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We combine psychology expertise with trading experience to help you develop
-              a resilient trading mindset.
+              The markets don't stop, and neither does your mind. We offer the mental health tools
+              and support you need to perform at your best.
             </p>
           </div>
 
@@ -97,21 +94,32 @@ const Welcome = () => {
         </div>
       </div>
 
+      {/* Testimonial Section */}
+      <div className="bg-blue-50 py-16">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <blockquote className="text-xl italic text-gray-900">
+            "MindSync has been invaluable during volatile market periods. Having a therapist who understands
+            trading psychology has completely transformed my approach to risk."
+          </blockquote>
+          <p className="mt-4 text-gray-600">- MindSync Member, Hedge Fund Analyst</p>
+        </div>
+      </div>
+
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Trading Psychology?
+            Your Mind, Your Edge
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of traders who are mastering their emotions and improving
-            their trading decisions.
+            The most successful investors know that mental clarity leads to better financial decisions.
+            Start your MindSync journey today and transform your relationship with the markets.
           </p>
           <Link
             to="/auth"
             className="inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
           >
-            Start Your Journey
+            Begin Your Journey
             <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
