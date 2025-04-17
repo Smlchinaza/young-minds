@@ -1,12 +1,8 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useState } from "react";
-// import App from "./App.css";
-import Header from "./components/Header";
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes';
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Header />
-    </BrowserRouter>
-  );
+function App() {
+  return <RouterProvider router={router} />;
 }
+
+export default App;
