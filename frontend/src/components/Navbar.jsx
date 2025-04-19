@@ -13,6 +13,7 @@ const Navbar = () => {
     { name: 'Community', path: '/community' },
     { name: 'Resources', path: '/resources' },
     { name: 'Assessments', path: '/assessments' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   // Show different navigation items for onboarding pages
@@ -24,6 +25,7 @@ const Navbar = () => {
     { name: 'Community', path: '/community' },
     { name: 'Resources', path: '/resources' },
     { name: 'Assessments', path: '/assessments' },
+    { name: 'Contact', path: '/Contact' },
   ];
 
   const currentNavItems = isOnboarding ? onboardingItems : navItems;

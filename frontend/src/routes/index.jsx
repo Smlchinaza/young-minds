@@ -9,6 +9,7 @@ import Resources from '../pages/resources/Resources';
 import Assessments from '../pages/assessments/Assessments';
 import Goals from '../pages/goals/Goals';
 import Learn from '../pages/learn/Learn';
+import Contact from '../pages/contact/Contact';
 import Profile from '../pages/profile/Profile';
 // import Conference from '../pages/conference/Conference';
 // import TherapistDirectory from '../pages/therapist/TherapistDirectory';
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
       { path: '/goals', element: <Goals /> },
       { path: '/learn', element: <Learn /> },
       { path: '/profile', element: <Profile /> },
+      { path: '/contact', element: <Contact /> },
     ],
   },
 ]);
