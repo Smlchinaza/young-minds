@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   BarChart, 
   TrendingUp, 
@@ -16,7 +17,12 @@ const metrics = [
 ];
 
 const Assessments = () => {
+  const navigate = useNavigate();
   const [selectedTab, setSelectedTab] = useState('results');
+  
+  const handleStartAssessment = () => {
+    navigate('/assessment');
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -25,7 +31,10 @@ const Assessments = () => {
           <h1 className="text-2xl font-bold text-gray-900">Weekly Assessment</h1>
           <p className="text-gray-600">Track your trading psychology progress</p>
         </div>
-        <button className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+        <button 
+          onClick={handleStartAssessment}
+          className="flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors hover:shadow-md"
+        >
           Start Assessment
           <ArrowRight className="w-4 h-4 ml-2" />
         </button>
