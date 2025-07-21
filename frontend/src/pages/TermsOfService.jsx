@@ -35,7 +35,7 @@ const TermsOfService = () => (
       </li>
       <li>
         <strong>Contact</strong>
-        <p>If you have questions, contact us at <a href="mailto:your-email@example.com" className="text-blue-600 underline">your-email@example.com</a>.</p>
+        <p>If you have questions, contact us at <a href="mailto:samchuks898@gmail.com" className="text-blue-600 underline">samchuks898@gmail.com</a>.</p>
       </li>
     </ol>
   </div>

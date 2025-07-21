@@ -11,6 +11,8 @@ import Community from './pages/community/Community';
 import Profile from './pages/profile/Profile';
 import Assessments from './pages/assessments/Assessments';
 import Contact from './pages/contact/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 export const router = createBrowserRouter([
   {
@@ -27,7 +29,9 @@ export const router = createBrowserRouter([
       { path: 'community', element: <Community /> },
       { path: 'profile', element: <Profile /> },
       { path: 'assessments', element: <Assessments /> },
-      { path: 'contact', element: <Contact /> }
+      { path: 'contact', element: <Contact /> },
+      { path: 'privacy-policy', element: <PrivacyPolicy /> },
+      { path: 'terms', element: <TermsOfService /> },
     ]
   }
 ]);
