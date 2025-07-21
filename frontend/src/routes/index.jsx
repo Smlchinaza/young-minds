@@ -11,6 +11,8 @@ import Goals from '../pages/goals/Goals';
 import Learn from '../pages/learn/Learn';
 import Contact from '../pages/contact/Contact';
 import Profile from '../pages/profile/Profile';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfService from '../pages/TermsOfService';
 // import Conference from '../pages/conference/Conference';
 // import TherapistDirectory from '../pages/therapist/TherapistDirectory';
 
@@ -30,6 +32,8 @@ export const router = createBrowserRouter([
       { path: '/learn', element: <Learn /> },
       { path: '/profile', element: <Profile /> },
       { path: '/contact', element: <Contact /> },
+      { path: '/privacy-policy', element: <PrivacyPolicy /> },
+      { path: '/terms', element: <TermsOfService /> },
     ],
   },
 ]);
